@@ -59,7 +59,7 @@ public:
 		return model;
 	}
 
-	void SetModel(char* Model)
+	void SetModel(const char* Model)
 	{
 		if (model != nullptr) {
 			delete[] model;
@@ -73,7 +73,7 @@ public:
 		return country;
 	}
 
-	void SetCountry(char* Country)
+	void SetCountry(const char* Country)
 	{
 		if (country != nullptr) {
 			delete[] country;
@@ -97,7 +97,7 @@ public:
 		return year;
 	}
 
-	void setYear(int Year)
+	void SetYear(int Year)
 	{
 		year = Year;
 	}
@@ -116,5 +116,7 @@ int main()
 	
 	Car b;
 	b.Input();
+	b.Print();
+	b.SetModel("Toyota");
 	b.Print();
 }
